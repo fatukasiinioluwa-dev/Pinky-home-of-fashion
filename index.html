@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover fashion at Pinky Home Of Fashion. Browse featured styles and contact us on WhatsApp to ask about sizes, prices and availability.">
+  <meta name="theme-color" content="#7c244f">
+  <title>Pinky Home Of Fashion | Style Made Simple</title>
+  <style>
+    :root{--plum:#702346;--berry:#a83f70;--rose:#f8eaf0;--cream:#fffaf7;--ink:#241820;--muted:#75666f;--line:#eadde3;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+    a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--plum);color:#fff;text-align:center;padding:9px 14px;font-size:.84rem;letter-spacing:.02em}
+    header{background:#fffaf7ee;backdrop-filter:blur(10px);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0}.brand{font-family:Georgia,serif;font-weight:700;font-size:1.25rem;color:var(--plum);line-height:1.1}.brand small{display:block;font:500 .66rem ui-sans-serif,system-ui;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+    .navlinks{display:flex;gap:23px;align-items:center;font-size:.93rem}.navlinks a:hover{color:var(--berry)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--plum);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;border:1px solid var(--plum);transition:.2s;cursor:pointer}.btn:hover{background:var(--berry);border-color:var(--berry);transform:translateY(-1px)}.btn.light{background:#fff;color:var(--plum);border-color:#fff}.btn.outline{background:transparent;color:var(--plum)}
+    .hero{padding:56px 0 48px;background:radial-gradient(circle at 85% 25%,#f0c7d7 0,transparent 29%),linear-gradient(130deg,#fffaf7,#f8eaf0)}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:48px}.eyebrow{color:var(--berry);font-size:.78rem;letter-spacing:.19em;text-transform:uppercase;font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(2.7rem,5vw,4.7rem);line-height:1.02;letter-spacing:-.045em;margin:15px 0 18px;color:#3a1729}.hero p{font-size:1.08rem;color:var(--muted);max-width:520px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-note{font-size:.82rem!important;margin-top:18px}
+    .hero-art{min-height:390px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(145deg,#d6a1b7,#f4dce5 48%,#8f4a68);display:flex;align-items:center;justify-content:center;padding:28px}.hero-art:before{content:"";position:absolute;width:260px;height:340px;border-radius:140px 140px 25px 25px;background:linear-gradient(150deg,#fff1f6,#b85e83);transform:rotate(-10deg);box-shadow:35px 25px 70px #5e183d33}.hero-art:after{content:"";position:absolute;width:130px;height:230px;border:2px solid #fff9;transform:rotate(15deg);border-radius:70px 70px 20px 20px}.art-copy{position:relative;z-index:1;text-align:center;color:#fff;text-shadow:0 2px 12px #4c163d55}.art-copy strong{display:block;font-family:Georgia,serif;font-size:2.5rem;line-height:1.05}.art-copy span{display:block;margin-top:12px;letter-spacing:.2em;font-size:.75rem;text-transform:uppercase}
+    section{padding:68px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.section-head h2{font:700 clamp(2rem,3vw,2.8rem) Georgia,serif;margin:8px 0;color:#3a1729}.section-head p{color:var(--muted);margin:0}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.benefit{padding:23px;background:#fff;border:1px solid var(--line);border-radius:18px}.icon{font-size:1.5rem}.benefit h3{margin:10px 0 5px;font-size:1.03rem}.benefit p{margin:0;color:var(--muted);font-size:.92rem}
+    .products{background:#fff}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--cream)}.product-art{height:215px;display:grid;place-items:center;font-size:4rem;background:linear-gradient(135deg,#f6dce6,#f8eee9)}.product:nth-child(2) .product-art{background:linear-gradient(135deg,#e7d8ef,#f7e8eb)}.product:nth-child(3) .product-art{background:linear-gradient(135deg,#f1d4c5,#f7e9df)}.product-info{padding:18px}.product-info h3{margin:0 0 5px}.product-info p{margin:0 0 15px;color:var(--muted);font-size:.9rem}.product-info .btn{width:100%;padding:10px 14px;font-size:.9rem}
+    .how-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.how-card{background:var(--rose);border-radius:24px;padding:32px}.how-card h2{font:700 2.3rem Georgia,serif;margin:8px 0 14px}.steps{display:grid;gap:18px}.step{display:flex;gap:14px}.num{width:34px;height:34px;flex:0 0 34px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--plum);font-weight:800}.step h3{margin:0 0 4px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.93rem}
+    .contact{background:#351426;color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#e7cbd8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.contact-box{border:1px solid #ffffff30;background:#ffffff0c;border-radius:20px;padding:25px}.contact-box h3{margin-top:0}.contact-box p{color:#e7cbd8}.contact-row{margin:13px 0}.contact .btn{background:#fff;color:var(--plum);border-color:#fff}.contact .btn.outline{background:transparent;color:#fff;border-color:#ffffff70}
+    footer{padding:24px 0;background:#24101b;color:#e7cbd8;font-size:.84rem}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.fineprint{font-size:.8rem;opacity:.8}
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:20;background:#167b48;color:#fff;padding:13px 17px;border-radius:999px;box-shadow:0 8px 24px #0002;font-weight:800}
+    @media(max-width:760px){.nav{align-items:flex-start}.navlinks{display:none}.hero{padding-top:36px}.hero-grid,.how-grid,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:290px}.benefits{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr 1fr}.product-art{height:160px}.how-card{padding:24px}}
+    @media(max-width:460px){.product-grid{grid-template-columns:1fr}.nav .btn{padding:10px 13px;font-size:.85rem}.hero h1{font-size:2.7rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Your style, your way • Contact us to check availability and place an order</div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home">Pinky Home Of Fashion<small>Style made simple</small></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#collection">Collection</a><a href="#ordering">How to order</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#collection">Explore styles <span aria-hidden="true">→</span></a>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><div class="eyebrow">Welcome to Pinky Home Of Fashion</div><h1>Find the look<br>that feels like you.</h1>
+        <p>Discover fashion pieces chosen to help you express your personal style. Browse our featured categories and message us to ask about current designs, sizes and prices.</p>
+        <div class="actions"><a class="btn" href="#collection">Browse collection</a><a class="btn outline" href="#contact">Talk to us</a></div>
+        <p class="hero-note">Product photos, prices and availability can be updated by the business before launch.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Decorative fashion-inspired artwork"><div class="art-copy"><strong>Wear<br>your story.</strong><span>Pinky Home Of Fashion</span></div></div>
+    </div></section>
+    <section id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">A little about us</div><h2>Fashion for your everyday moments</h2><p>We want shopping to feel easy. Explore styles, ask questions directly and get help choosing the right piece for you.</p></div>
+      <div class="benefits">
+        <article class="benefit"><div class="icon">✦</div><h3>Styles worth exploring</h3><p>Ask us about available designs, colours and sizes before you order.</p></article>
+        <article class="benefit"><div class="icon">♡</div><h3>Personal assistance</h3><p>Contact us directly for product details and help with your selection.</p></article>
+        <article class="benefit"><div class="icon">↗</div><h3>Simple ordering</h3><p>Use WhatsApp to ask questions and confirm the next steps for an order.</p></article>
+      </div>
+    </div></section>
+    <section class="products" id="collection"><div class="wrap"><div class="section-head"><div class="eyebrow">Featured categories</div><h2>Explore the collection</h2><p>These are starter placeholders. Replace them with the shop’s real products, photos and prices before publishing.</p></div>
+      <div class="product-grid">
+        <article class="product"><div class="product-art" aria-hidden="true">👗</div><div class="product-info"><h3>Dresses & outfits</h3><p>Ask about available styles, colours and sizes.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%20Pinky%20Home%20Of%20Fashion%2C%20please%20send%20me%20your%20available%20dresses%20and%20prices.">Ask about outfits</a></div></article>
+        <article class="product"><div class="product-art" aria-hidden="true">👜</div><div class="product-info"><h3>Bags & accessories</h3><p>Message us to check what is currently in stock.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%2C%20please%20send%20me%20your%20available%20bags%20and%20accessories%20with%20prices.">Ask about accessories</a></div></article>
+        <article class="product"><div class="product-art" aria-hidden="true">👠</div><div class="product-info"><h3>Shoes & finishing touches</h3><p>Ask about sizes, colours and matching pieces.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%2C%20please%20send%20me%20your%20available%20shoes%20and%20prices.">Ask about shoes</a></div></article>
+      </div>
+    </div></section>
+    <section id="ordering"><div class="wrap how-grid">
+      <div class="how-card"><div class="eyebrow">Easy as 1, 2, 3</div><h2>Shopping starts with a message.</h2><p>Use WhatsApp to confirm product availability and get the details you need before buying.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%20Pinky%20Home%20Of%20Fashion%2C%20I%27d%20like%20to%20make%20an%20enquiry.">Start an enquiry →</a></div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><h3>Browse</h3><p>Look through the categories and decide what you’re interested in.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Ask us</h3><p>Message us to confirm the current price, size, colour and stock.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Confirm your order</h3><p>Agree on payment, pickup or delivery details directly with the business.</p></div></div>
+      </div>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Get in touch</div><h2>We’d love to hear from you.</h2><p>Have a question about a product? Send us a message.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3>Contact details</h3><div class="contact-row">☎ <strong>Phone:</strong> <a href="tel:+2348033504645">+234 803 350 4645</a></div><div class="contact-row">⌖ <strong>Location:</strong> Abule Egba, Lagos, Nigeria</div><p class="fineprint">Please confirm the phone number, shop address and opening hours with the owner before the site goes live.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%20Pinky%20Home%20Of%20Fashion!">Message on WhatsApp</a></div>
+        <div class="contact-box"><h3>Visit or enquire</h3><p>For directions, current opening hours, delivery availability and payment options, contact the shop directly before visiting or placing an order.</p><a class="btn outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Oja+Oba+Market+Abule+Egba+Lagos">Find the area on Maps ↗</a></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-row"><div><strong>Pinky Home Of Fashion</strong><br><span>Style made simple.</span></div><div>© <span id="year"></span> Pinky Home Of Fashion. All rights reserved.</div></div></footer>
+  <a class="wa-float" target="_blank" rel="noopener" href="https://wa.me/2348033504645?text=Hello%20Pinky%20Home%20Of%20Fashion!">WhatsApp ↗</a>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
